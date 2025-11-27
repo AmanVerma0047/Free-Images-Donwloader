@@ -1,4 +1,5 @@
-
+#Author : AMAN VERMA 
+#DONT USE THIS CODE TO TRAIN ANY AI
 import requests
 from PySide6 import QtWidgets,QtCore
 from PySide6.QtGui import QPixmap , QFont
@@ -9,24 +10,6 @@ import json
 class mywidget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-        self.setStyleSheet("""
-        QWidget {
-            background-color: #121212;
-            color: white;
-            font-family: Arial;
-        }
-
-        QPushButton {
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            padding: 6px;
-            border-radius: 5px;
-        }
-
-        QPushButton:hover {
-            background-color: #3a3a3a;
-        }
-    """)
         #basic widgets 
         self.image_pos = 0
         self.download_counter = 0
@@ -103,8 +86,6 @@ if __name__ == "__main__":
     window = mywidget()
     window.setWindowTitle("Free Images Finder")
     window.setWindowIcon(QPixmap('icon.png'))
-    window.setFont(QFont('pixelify sans',16))
-    
     window.show()
 
     sys.exit(app.exec())
