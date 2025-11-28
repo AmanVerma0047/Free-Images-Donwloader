@@ -15,6 +15,7 @@ class mywidget(QtWidgets.QWidget):
         self.download_counter = 0
         self.download_url = ""
         #LINEEDIT
+        self.label = QtWidgets.QLabel("Search For any Image here!")
         self.inputquery = QtWidgets.QLineEdit()
         self.button = QtWidgets.QPushButton("Find Image!")
         self.nextButton = QtWidgets.QPushButton("Next")
@@ -25,6 +26,7 @@ class mywidget(QtWidgets.QWidget):
         self.image.setMaximumHeight(150)
         #BUTTON
         layout = QtWidgets.QVBoxLayout(self)
+        layout.addWidget(self.label)
         layout.addWidget(self.inputquery)
         layout.addWidget(self.button)
         hlay = QtWidgets.QHBoxLayout(self)
@@ -87,7 +89,6 @@ if __name__ == "__main__":
     window.setWindowTitle("Free Images Finder")
     window.setWindowIcon(QPixmap('icon.png'))
     window.show()
-
     sys.exit(app.exec())
 
     # "https://api.pexels.com/v1/search?query=people"
