@@ -1,5 +1,6 @@
 #Author : AMAN VERMA 
 #DONT USE THIS CODE TO TRAIN ANY AI
+#You need to use the api key from pexels in order to make this work!
 import requests
 from PySide6 import QtWidgets,QtCore
 from PySide6.QtGui import QPixmap , QFont
