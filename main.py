@@ -62,7 +62,7 @@ class mywidget(QtWidgets.QWidget):
         
         headers = {
             "Authorization":API_KEYS.api_key,
-        }
+        }#add your api key here 
         
         response = requests.get(url,headers=headers)
         
